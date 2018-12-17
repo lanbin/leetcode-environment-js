@@ -1,0 +1,37 @@
+{
+    "name": "leetcode-environment-js",
+    "version": "1.0.0",
+    "description": "A Javascript environment to test leetcode solution in local.",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha --compilers js:@babel/register --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lanbin/leetcode-environment-js.git"
+    },
+    "keywords": [
+        "leetcode",
+        "javascript"
+    ],
+    "author": "lanbin@gmail.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/lanbin/leetcode-environment-js/issues"
+    },
+    "homepage": "https://github.com/lanbin/leetcode-environment-js#readme",
+    "dependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.2.0",
+        "@babel/register": "^7.0.0",
+        "chai": "^4.2.0",
+        "chalk": "^2.4.1",
+        "chokidar": "^2.0.4",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.18.9"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0"
+    }
+}
