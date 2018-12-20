@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "add": "npx babel-node ./bin/add.js",
+        "start": "npx babel-node ./bin/test.js",
         "test": "mocha --compilers js:@babel/register --watch"
     },
     "repository": {
@@ -33,7 +34,8 @@
         "fs-extra": "^7.0.1",
         "mocha": "^5.2.0",
         "nodemon": "^1.18.9",
-        "prompts": "^2.0.0"
+        "prompts": "^2.0.0",
+        "select-shell": "^1.1.2"
     },
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.2.0"
