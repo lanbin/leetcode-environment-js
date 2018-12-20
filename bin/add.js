@@ -2,7 +2,7 @@
  * @Author: lanbin
  * @Date:   2018-12-20 17:57:32
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-20 18:51:53
+ * @Last Modified time: 2018-12-20 19:11:08
  */
 
 import prompts from 'prompts'
@@ -12,11 +12,11 @@ async function init() {
     let question = [{
         type: 'number',
         name: 'quiznum',
-        message: '题目的序号'
+        message: 'The Number of The Quiz'
     }, {
         type: 'text',
         name: 'funcname',
-        message: '题目的方法名称'
+        message: 'The Name of The Function'
     }]
 
     const {
