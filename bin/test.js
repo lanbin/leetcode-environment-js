@@ -2,7 +2,7 @@
  * @Author: lanbin
  * @Date:   2018-12-20 19:32:37
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-20 20:15:33
+ * @Last Modified time: 2018-12-20 20:20:52
  */
 
 import {
@@ -40,8 +40,8 @@ list.on('select', options => {
         })
     } else {
         console.log('Select error.')
+        process.exit(0);
     }
-    process.exit(0);
 });
 
 list.on('cancel', function(options) {
