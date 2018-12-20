@@ -2,7 +2,7 @@
  * @Author: lanbin
  * @Date:   2018-12-20 18:46:18
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-20 19:07:35
+ * @Last Modified time: 2018-12-20 20:47:58
  */
 
 import path from 'path'
@@ -29,7 +29,6 @@ function createFile(data, type = 'src') {
         })
         .then(resString => {
             return fs.outputFile(distFilePath, resString)
-
         })
         .then(_ => {
             console.log(`${distFilePath} 创建完成.`)
