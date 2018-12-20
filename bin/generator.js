@@ -2,7 +2,7 @@
  * @Author: lanbin
  * @Date:   2018-12-20 18:46:18
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-20 19:03:12
+ * @Last Modified time: 2018-12-20 19:07:35
  */
 
 import path from 'path'
@@ -10,7 +10,7 @@ import fs from 'fs-extra'
 
 const testFolder = path.resolve('./test/')
 const testTemplate = path.resolve('./template/test.spec.tjs')
-const srcFolder = paht.resolve('./src/')
+const srcFolder = path.resolve('./src/')
 const srcTemplate = path.resolve('./template/src.tjs')
 
 function createFile(data, type = 'src') {
@@ -20,7 +20,7 @@ function createFile(data, type = 'src') {
     } = data
     var template = type === 'src' ? srcTemplate : testTemplate
     var folderPath = type === 'src' ? srcFolder : testFolder
-    var distFilePath = folderPath + replaceFileName(`${funcname}${quiznum}`)
+    var distFilePath = path.resolve(folderPath, replaceFileName(`${funcname}${quiznum}`, template))
 
     fs.readFile(template, 'utf-8')
         .then(content => {
@@ -43,6 +43,7 @@ function replaceFileName(name, filePath) {
     var sourceFileName = path.basename(filePath)
     sourceFileName = sourceFileName.split('.')
     sourceFileName[0] = name
+    sourceFileName[sourceFileName.length - 1] = sourceFileName[sourceFileName.length - 1].replace('tjs', 'js')
     return sourceFileName.join('.')
 }
 
