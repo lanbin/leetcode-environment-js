@@ -2,9 +2,7 @@ import {
     expect
 } from 'chai'
 
-import {
-    {funcname}
-} from '../src/{funcname}{quiznum}.js'
+import {funcname} from '../src/{funcname}{quiznum}.js'
 
 describe('{funcname}', _ => {
     it(`Default Test`, done => {
