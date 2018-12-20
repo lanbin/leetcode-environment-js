@@ -4,6 +4,7 @@
     "description": "A Javascript environment to test leetcode solution in local.",
     "main": "index.js",
     "scripts": {
+        "add": "npx babel-node ./bin/add.js",
         "test": "mocha --compilers js:@babel/register --watch"
     },
     "repository": {
@@ -29,8 +30,10 @@
         "chalk": "^2.4.1",
         "chokidar": "^2.0.4",
         "columnify": "^1.5.4",
+        "fs-extra": "^7.0.1",
         "mocha": "^5.2.0",
-        "nodemon": "^1.18.9"
+        "nodemon": "^1.18.9",
+        "prompts": "^2.0.0"
     },
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.2.0"
