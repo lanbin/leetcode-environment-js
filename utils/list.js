@@ -2,10 +2,8 @@
  * @Author: lanbin
  * @Date:   2018-12-18 11:03:16
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-18 20:23:52
+ * @Last Modified time: 2018-12-26 12:22:02
  */
-
-import columnify from 'columnify'
 
 class ListNode {
     constructor(val = '', next = null) {
