@@ -2,11 +2,12 @@
  * @Author: lanbin
  * @Date:   2018-12-26 12:22:31
  * @Last Modified by:   lanbin
- * @Last Modified time: 2018-12-26 13:30:58
+ * @Last Modified time: 2018-12-26 14:48:39
  */
 
 class TreeNode {
     constructor(val = '', left = null, right = null) {
+        if (val === null) return null
         this.val = val
         this.left = left
         this.right = right
